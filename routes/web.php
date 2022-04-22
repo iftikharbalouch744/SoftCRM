@@ -20,6 +20,8 @@ Route::post('password/reset/process', 'CRM\AdminController@processChangePassword
 Route::get('/', 'DashboardController@index')->name('home');
 Route::get('/', 'DashboardController@index');
 
+Route::get('/query', 'QueryController@index');
+
 Route::get('/reload-info', 'DashboardController@processReloadInformation')->name('reload-info');
 
 Route::group(['prefix' => 'clients'], function () {
